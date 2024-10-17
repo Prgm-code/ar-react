@@ -32,8 +32,8 @@ export const VisualizeAr = () => {
     }
 
     // Añadir luces
-    const ambientLight = new THREE.AmbientLight(0x404040); // Luz ambiental
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5); // Luz direccional
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Luz ambiental
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 3.5); // Luz direccional
     scene.add(ambientLight);
     scene.add(directionalLight);
 
