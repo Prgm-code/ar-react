@@ -3,12 +3,12 @@
 import { Canvas } from "@react-three/fiber";
 import {
   Center,
-  AccumulativeShadows,
-  RandomizedLight,
+  // AccumulativeShadows,
+  // RandomizedLight,
   Environment,
   OrbitControls,
 } from "@react-three/drei";
-import { Model } from "./components/Cobra";
+import { Model } from "./components/Plant";
 import { XROrigin, XR, createXRStore } from "@react-three/xr";
 import { Suspense } from "react";
 
@@ -43,7 +43,7 @@ export default function App() {
           <group position={[0, -0.75, 0]}>
             <Suspense>
               <Center top>
-                <Model />
+                <Model color="green" />
               </Center>
             </Suspense>
             <directionalLight position={[1, 8, 1]} castShadow />
